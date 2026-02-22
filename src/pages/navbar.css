@@ -1,0 +1,48 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Brand Name */
+.navbar-brand a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff3d00;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ff9100;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
