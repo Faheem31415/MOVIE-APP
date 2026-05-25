@@ -22,7 +22,7 @@ function Moviecard({ Movie }) {
                     <button className={`fav-btn ${'favorite' ? "active" : ""}`} onClick={handleFavClick}>
                         {favorite ? "❤️" : "🤍"} 
                     </button>
-                </div>+
+                </div>
             </div>
             <div className="movie-info">
                 <h3>{Movie.title}</h3>
